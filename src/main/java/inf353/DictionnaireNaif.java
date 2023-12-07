@@ -9,10 +9,10 @@ package inf353;
  */
 public class DictionnaireNaif implements Dictionnaire {
 
-     private char[] d;
-     private int L;
-     private  int N ;
-     private int taillemax;
+     public char[] d;
+     public int L;
+     public  int N ;
+     public int taillemax;
      
      public DictionnaireNaif (int n){
          this.N=n;

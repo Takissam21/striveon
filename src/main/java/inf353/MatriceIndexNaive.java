@@ -12,17 +12,18 @@ public class MatriceIndexNaive implements MatriceIndex {
     //attributs
     public int nbdoc;// nombre de ligne
     public int nbMots;// nombre de colomuns
-    public int [] [] matrice;
+    public int[][] matrice;
 
     // Constructeur1 (Créer une matrice intialiser avec 0)
 
-    public  MatriceIndexNaive (int m,int d){
+    public  MatriceIndexNaive (int d,int m){
 
         this.nbdoc=d;
         this.nbMots=m;
         this.matrice=new int[d][m];
 
         int i=0;
+
         //remplissage de la matrice
         while(i!=d){
             int j=0;
@@ -68,7 +69,7 @@ public class MatriceIndexNaive implements MatriceIndex {
     @Override
     public void sauver(String nomDeFichier){
        try{
-          String chemin = "/src/main/java/inf353/ressources/"+ nomDeFichier +".txt";
+          String chemin = System.getProperty("user.dir") +"/src/main/java/inf353/ressources/"+ nomDeFichier +".txt";
           File fichier = new File(chemin); //creation du fichier 
           FileWriter fileWriter = new FileWriter(fichier);
           // Créer un objet BufferedWriter pour écrire du texte dans le fichier de manière efficace

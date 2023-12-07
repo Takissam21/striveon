@@ -14,9 +14,9 @@ public class Indexation {
 	on a besoin de dictionnairenaif
 	3/pour associer à chaque terme unique un indice unique 
 	à savoir le numéro de colonne on a besoin de dictionnairenaif*/
-	private MatriceIndex matriceIndex;//cela permet de travailler avec n'importe quelle classe qui implémente l'interface MatriceIndex
-	private DictionnaireNaif dictermes;
-	private DictionnaireNaif dicdocs; 
+	public MatriceIndex matriceIndex;//cela permet de travailler avec n'importe quelle classe qui implémente l'interface MatriceIndex
+	public DictionnaireNaif dictermes;
+	public DictionnaireNaif dicdocs; 
 
 
     public static int nbmots=60000;
